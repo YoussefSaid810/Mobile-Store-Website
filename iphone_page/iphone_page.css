@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     /* دا الكود بتاع الخط */
 }
-/* من اول هنا  */
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -159,7 +159,7 @@ body {
           @media only screen and (max-width: 300px) {
             .prev, .next,.text {font-size: 11px}
           }
-          /* لحد هنا ملكوش دعوه بيه */
+      
 header {
     background-color:white;
     color: black;
