@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" type="image/png" href="../../../logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap-grid.min.css" integrity="sha512-3AxW5HcDzhL9MJdO2mpDEGEZ6NcCg/pDSa8R2kH5gwEA4r48RxZf0nPITA1NfX1pNA6a/eAayX+yW6QopF4jeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+    <title>Dash2</title>
+</head>
+
+<body>
+
+    <section class="active" id="MSGerr" onclick="divRemover()">
+        <div class="wrongMSG">
+            <p class="icon"><i class="far fa-thumbs-up"></i></p>
+            <p>Colors saved Successfuly</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container pb-5">
+
+            <header>
+                <div class="admin col-sm-6">
+                    <div class="icon">
+                        <p><i class="fas fa-user-alt"></i></p>
+                    </div>
+                    <div class="details">
+                        <h6><span>Hello,</span> <span id="name">Null</span></h6>
+                        <p id="mail">Null@admin.com</p>
+                    </div>
+                </div>
+
+                <div class="edit col-sm-6">
+                    <ul>
+                        <li class="icon"><i class="fas fa-user-cog"></i>
+                        </li>
+                        <ul>
+                            <li><a href="../dashboard2.html">Dashboard</a></li>
+                            <li><a id="logout">Log Out</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </header>
+
+            <section class="editor my-3 p-5 pt-4">
+                <div class="edit col-sm-12">
+                    <h1>Edit <span id="admin">admin</span>'s Account</h1>
+                </div>
+
+                <div class="edit col-sm-12">
+                    <input type="text" class="editName" placeholder="Enter New Name" />
+                    <input type="text" id="editUsername" placeholder="Enter New username" />
+                    <input type="text" id="editPassword" placeholder="Enter New password" />
+                    <input type="text" id="editEmail" placeholder="Enter New email" />
+                </div>
+
+                <div class="save col-sm-12 text-right mt-2">
+                    <button class="saving">Save</button>
+                </div>
+            </section>
+
+            <section class="editor my-3 mt-4 p-5 pt-4">
+                <div class="edit col-sm-12">
+                    <h1>Remove <span id="admin">admin</span></h1>
+                </div>
+
+                <div class="edit col-sm-12">
+                    <select name="admins" id="adminsSellector">
+                      </select>
+                </div>
+
+                <div class="save col-sm-12 text-right mt-2">
+                    <button class="delete">Delete</button>
+                </div>
+            </section>
+        </div>
+        <footer class="mt-4">
+            <p class="text-center">This page has made by TEAM EL-WEB</p>
+        </footer>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../colorSetter.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

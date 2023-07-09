@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="../../logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="../login/style.css">
+    <link rel="StyleSheet" href="regStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Rigester</title>
+
+</head>
+
+<body>
+
+    <section>
+
+        <section class="active" id="missing_val">
+            <div class="wrongMSG">
+                <p class="icon"><i class="fas fa-times"></i></p>
+                <p id="details">All Fields are required</p>
+                <div class="btns">
+                    <a onclick="divRemover()">Continue</a>
+                    <a href="../../home_page/home.html">Go Home</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="active" id="MSGsccess">
+            <div class="wrongMSG">
+                <p class="icon"><i class="fas fa-check"></i></p>
+                <p>Admin Has Added Successfuly</p>
+                <div class="btns">
+                    <a href="../login/login.html">Login</a>
+                    <a href="../../home_page/home.html">Go Home</a>
+                </div>
+            </div>
+        </section>
+
+        <a class="goHome" href="../../home_page/home.html">
+            <p class="icon"><i class="fas fa-chevron-left"></i></p>
+            <p>Home</p>
+        </a>
+
+        <div class="col-sm-12 bg d-flex">
+        
+
+            <div class="col-lg-4 col-md-8 col-md-9 form reg">
+                <div class="head">
+                    <h1>Register</h1>
+                </div>
+                <lable for="Name">Name:</lable>
+                <input class="col-sm-12" type="text" id="Name">
+                <lable for="UserName">UserName:</lable>
+                <input class="col-sm-12" type="text" id="UserName">
+                <lable for="Password">Password:</lable>
+                <input class="col-sm-12" type="password" id="Password">
+                <lable for="Mail">E-mail:</lable>
+                <input class="col-sm-12" type="email" id="Mail">
+                <div class="col-sm-12">
+                    <a href="../login/login.html" class="float-end mt-4 mx-2 reg">Log In</a>
+                    <a class="float-end mt-4 logIn" id="reg">Register</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../dashboard/colorSetter.js"></script>
+    <script src="rig.js"></script>
+</body>
+
+</html>

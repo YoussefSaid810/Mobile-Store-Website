@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Log In</title>
+
+</head>
+
+<body>
+
+    <section class="active" id="MSGerr">
+        <div class="wrongMSG">
+            <p class="icon"><i class="fas fa-heart-broken"></i></p>
+            <p>We are Sorry for that, It seems that Username or Password is wrong</p>
+            <div class="btns">
+                <a onclick="divRemover()">Try again</a>
+                <a href="../../home_page/home.html">Go Home</a>
+            </div>
+        </div>
+    </section>
+
+    <a class="goHome" href="../../home_page/home.html">
+        <p class="icon"><i class="fas fa-chevron-left"></i></p>
+        <p>Home</p>
+    </a>
+
+    <section>
+        <div class="col-sm-12 bg d-flex">
+            <!-- <div class="colored left col-lg-3">
+                <p>left</p>
+            </div> -->
+            <!-- <div class="colored right col-lg-9">
+                <p>right</p>
+            </div> -->
+
+            <div class="col-lg-4 col-md-8 col-md-9 form login">
+                <div class="head">
+                    <h1>Log In</h1>
+                </div>
+                <lable>Username:</lable>
+                <input class="col-sm-12" type="text" id="userName">
+                <lable>Password:</lable>
+                <input class="col-sm-12" type="password" id="password">
+                <div class="col-sm-12">
+                    <a href="../register/register.html" class="float-end mt-4 reg">Register</a>
+                    <a class="float-end mt-4 mx-2 logIn" onclick="logIn()">Log In</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../dashboard/colorSetter.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
